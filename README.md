@@ -26,8 +26,6 @@ or
 
 ### Screenshots
 
-<div style="text-align:center">
-      <img src ="https://snag.gy/Kf2vGB.jpg" alt="desktop app"/>
-      <img src ="https://snag.gy/jv23gY.jpg" alt="mobile app"/>
-      <img src ="https://snag.gy/QDv5LP.jpg" alt="tablet app"/>
-</div>
+![App screenshot](https://snag.gy/Kf2vGB.jpg)
+![Mobile app screenshot](https://snag.gy/jv23gY.jpg)
+![Mobile app screenshot](https://snag.gy/QDv5LP.jpg)
