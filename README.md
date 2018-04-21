@@ -15,7 +15,7 @@ Offline first responsive app made for Udacity's Front end developer Nanodegree
 
 * Then navigate to your new directory and run a SimpleHTTPServer with
 
-```python2 -m SimpleHTTPServer 8000``` if you are using python 2
+```python -m SimpleHTTPServer 8000``` if you are using python 2
 
 or
 
