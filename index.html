@@ -11,7 +11,7 @@
 <body>
 <header>
       <nav class="header">
-            <h1><a aria-label="Restaurant Reviews" href="/">Restaurant Reviews</a></h1>
+            <h1><a aria-label="Restaurant Reviews" href="/" tabindex="1">Restaurant Reviews</a></h1>
       </nav>
 </header>
 
@@ -23,10 +23,10 @@
             <div class="filter-options">
                   <h2>Filter Results</h2>
                   <section class="container">
-                        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Filter Neighborhood">
+                        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Filter Neighborhood" tabindex="2">
                               <option value="all">All Neighborhoods</option>
                         </select>
-                        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="Filter Cuisine">
+                        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="Filter Cuisine" tabindex="3">
                               <option value="all">All Cuisines</option>
                         </select>
                   </section>
@@ -37,20 +37,19 @@
       </section>
 </main>
 
-  <script>
-      if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js');
-            });
-      }
-  </script>
+  <script src="js\register_sw.js"></script>
+  <script src="js\manage_focus.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <script src="js/dbhelper.js"></script>
   <script src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAumwsKITLnbBcikYgPirpVRM38-vmM3FM&libraries=places&callback=initMap"></script>
+  <script>
+        $('[tabindex=0]').not($('li')).focus('[tabindex=1]');
+  </script>
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a href="/" tabindex="5"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
